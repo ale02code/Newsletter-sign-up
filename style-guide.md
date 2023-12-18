@@ -2,10 +2,10 @@
 
 ## Layout
 
-The designs were created to the following widths:
+  The designs were created to the following widths:
 
-- Mobile: 375px
-- Desktop: 1440px
+  - Mobile: 375px
+  - Desktop: 1440px
 
 ## Colors
 

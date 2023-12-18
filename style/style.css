@@ -17,6 +17,8 @@
     height: 100vh;
     width: 100vw;
     background-color: var(--neutral-white);
+    display: flex;
+    flex-direction: column-reverse;
   }
 
   .image-main-container {
@@ -50,10 +52,6 @@
 
   .paragraphs-container__item-list-container__content-list {
     margin: 12px 0;
-  }
-
-  .paragraphs-container__item-list-container:last-child {
-    margin: none;
   }
 
   .paragraphs-container__item-list-container__content-list {
@@ -124,8 +122,8 @@
     background-color: var(--neutral-white);
     display: flex;
     flex-direction: column;
-    align-items: space-around;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
   }
 
   .success-section>button {
@@ -133,6 +131,7 @@
     margin: 0 auto;
     padding: 1rem;
     border: none;
+    outline: none;
     border-radius: 6px;
     background: var(--neutral-dark-slate);
     color: var(--neutral-white);
@@ -166,4 +165,91 @@
 
   .success-section__information-container>p {
     font-size: 18px;
+  }
+
+  @media screen and (min-width: 375px) {
+    body {
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .main-container {
+      overflow: hidden;
+      width: 925px;
+      height: 600px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+      padding: 1.2rem;
+      position: relative;
+    }
+
+    .image-main-container {
+      height: 100%;
+      border-radius: 15px;
+    }
+
+    .paragraphs-container {
+      height: 95%;
+      padding-right: 2.4rem;
+    }
+
+    .paragraphs-container__title {
+      font-size: 3.1rem;
+    }
+
+    .paragraphs-container__paragraph-main {
+      font-size: 20px;
+    }
+
+    .paragraphs-container__item-list-container__content-list>p {
+      font-size: 20px;
+    }
+
+    .paragraphs-container__item-list-container__content-list>img {
+      height: 1.5rem;
+    }
+
+    .paragraphs-container__form__content>label {
+      font-size: 18px;
+    }
+
+    .paragraphs-container__form__content>input {
+      font-size: 18px;
+    }
+
+    .paragraphs-container__form>button {
+      font-size: 20px;
+    }
+
+    .paragraphs-container__form__content__paragraph-error {
+      font-size: 20px;
+    }
+
+    .success-section {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      justify-content: center;
+    }
+
+    .success-section__information-container>strong {
+      font-size: 4rem;
+    }
+
+    .success-section__information-container>p {
+      font-size: 1.7rem;
+    }
+
+    .success-section>button {
+      outline: none;
+      border: none;
+      font-size: 1.5rem;
+      margin-top: 2.9rem;
+    }
   }
